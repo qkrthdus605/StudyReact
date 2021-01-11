@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Greeting from './Chapter07/LoginControl';
-import LoginControl from './Chapter07/LoginControl';
+import AttendanceBook from './Chapter08/AttendanceBook';
 
 // ReactDOM.render(<Chapter06 />, document.getElementById('root'));
-ReactDOM.render(<LoginControl />, document.getElementById('root'));
+ReactDOM.render(<AttendanceBook />, document.getElementById('root'));
 
 // ReactDOM.render(
 //   <React.StrictMode>
