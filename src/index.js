@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SignUp from './Chapter09/SignUp';
+import Calculator from './Chapter10/Calculator';
 
 // ReactDOM.render(<Chapter06 />, document.getElementById('root'));
-ReactDOM.render(<SignUp />, document.getElementById('root'));
+ReactDOM.render(<Calculator />, document.getElementById('root'));
 
 // ReactDOM.render(
 //   <React.StrictMode>
