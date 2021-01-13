@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AttendanceBook from './Chapter08/AttendanceBook';
+import SignUp from './Chapter09/SignUp';
 
 // ReactDOM.render(<Chapter06 />, document.getElementById('root'));
-ReactDOM.render(<AttendanceBook />, document.getElementById('root'));
+ReactDOM.render(<SignUp />, document.getElementById('root'));
 
 // ReactDOM.render(
 //   <React.StrictMode>
