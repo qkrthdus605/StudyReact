@@ -1,7 +1,7 @@
 import React from 'react';
 import TemperatureInput from './TemperatureInput';
 
-//물이 끓는지 아닌지 리턴
+// 섭씨 온도 값에 따라 물이 끓는지 아닌지 리턴
 function BoilingVerdict(props){
     if(props.celcius >= 100){
         return <p>The water would boil.</p>
@@ -9,7 +9,7 @@ function BoilingVerdict(props){
     return <p>The water would not boil.</p>
 }
 
-//온도 변환 함수
+//온도 변환 함수 - 동기화를 위해
 function toCelcius(fahrenheit){
     return (fahrenheit - 32) * 5 / 9;
 }
@@ -18,7 +18,7 @@ function toFahrenheit(celcius){
     return (celcius * 9 / 5) + 32; 
 }
 
-//실제 온도 변환 
+//실제 온도 변환 함수 호출
 function tryConvert(temperature, convert){
     const input = parseFloat(temperature);
     if(Number.isNaN(input)){
@@ -53,11 +53,12 @@ class Calculator extends React.Component{
 
         return(
             <div>
+                {/* 섭씨 */}
                 <TemperatureInput
                     scale='C'
                     temperature={celcius}
                     onTemperatureChange={this.handleCelciusChange} />
-                
+                {/* 화씨 */}
                 <TemperatureInput
                     scale='F'
                     temperature={fahrenheit}

@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Calculator from './Chapter10/Calculator';
+import UserProfileList from './Chapter11/UserProfileList';
 
 // ReactDOM.render(<Chapter06 />, document.getElementById('root'));
-ReactDOM.render(<Calculator />, document.getElementById('root'));
+ReactDOM.render(<UserProfileList />, document.getElementById('root'));
 
 // ReactDOM.render(
 //   <React.StrictMode>

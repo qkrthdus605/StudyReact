@@ -5,6 +5,7 @@ const scaleNames = {
     f: 'Fahrenheit'
 };
 
+//온도 입력 컴포넌트 
 class TemperatureInput extends React.Component{
     constructor(props){
         super(props);
