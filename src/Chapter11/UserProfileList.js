@@ -20,6 +20,7 @@ class UserProfileList extends React.Component{
     render(){
         const { users } = this.state;
 
+        // UserProfile 렌더링
         return(
             <div>
                 {users.map((user) => {
